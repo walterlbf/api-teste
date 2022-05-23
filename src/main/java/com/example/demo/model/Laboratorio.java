@@ -1,23 +1,19 @@
 package com.example.demo.model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Laboratorio {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id;
+  private Long id;
 
   private String nomePropriedade;
 
-  public Laboratorio(long id, String nomePropriedade) {
-    super();
-    this.id = id;
-    this.nomePropriedade = nomePropriedade;
-  }
-
-  public long getId() {
+  public Long getId() {
     return id;
   }
 

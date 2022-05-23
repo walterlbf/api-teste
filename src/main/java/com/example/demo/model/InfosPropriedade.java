@@ -9,17 +9,11 @@ import javax.persistence.Id;
 public class InfosPropriedade {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id;
+  private Long id;
 
   private String nomePropriedade;
 
-  public InfosPropriedade(long id, String nomePropriedade) {
-    super();
-    this.id = id;
-    this.nomePropriedade = nomePropriedade;
-  }
-
-  public long getId() {
+  public Long getId() {
     return id;
   }
 

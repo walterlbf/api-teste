@@ -11,9 +11,9 @@ public class CadastroUsuarioService {
   @Autowired
   private CadastroUsuarioRepository repository;
 
-  public List<CadastroUsuario> FindAll() {
+  public List<CadastroUsuario> findAll() {
 
-    List<CadastroUsuario> usuarios = repository.findAll();
+    List<CadastroUsuario> usuarios = this.repository.findAll();
 
     return usuarios;
   }

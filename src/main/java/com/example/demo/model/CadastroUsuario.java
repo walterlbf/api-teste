@@ -5,13 +5,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 public class CadastroUsuario {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id;
+  private Long id;
   private String nome;
 
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'",
@@ -20,25 +21,14 @@ public class CadastroUsuario {
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'",
       timezone = "GMT")
   private Instant dataFinal;
-
+  @OneToOne
   private InfosPropriedade infosPropriedade;
   private String cnpj;
+  @OneToOne
   private Laboratorio laboratorio;
   private String observacoes;
 
-  public CadastroUsuario(String nome, Instant dataInicial, Instant dataFinal,
-      InfosPropriedade infosPropriedade, String cnpj, Laboratorio laboratorio, String observacoes) {
-    super();
-    this.nome = nome;
-    this.dataInicial = dataInicial;
-    this.dataFinal = dataFinal;
-    this.infosPropriedade = infosPropriedade;
-    this.cnpj = cnpj;
-    this.laboratorio = laboratorio;
-    this.observacoes = observacoes;
-  }
-
-  public long getId() {
+  public Long getId() {
     return id;
   }
 
