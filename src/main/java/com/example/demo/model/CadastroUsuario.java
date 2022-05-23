@@ -26,6 +26,18 @@ public class CadastroUsuario {
   private Laboratorio laboratorio;
   private String observacoes;
 
+  public CadastroUsuario(String nome, Instant dataInicial, Instant dataFinal,
+      InfosPropriedade infosPropriedade, String cnpj, Laboratorio laboratorio, String observacoes) {
+    super();
+    this.nome = nome;
+    this.dataInicial = dataInicial;
+    this.dataFinal = dataFinal;
+    this.infosPropriedade = infosPropriedade;
+    this.cnpj = cnpj;
+    this.laboratorio = laboratorio;
+    this.observacoes = observacoes;
+  }
+
   public long getId() {
     return id;
   }
@@ -87,18 +99,6 @@ public class CadastroUsuario {
   }
 
   public void setObservacoes(String observacoes) {
-    this.observacoes = observacoes;
-  }
-
-  public CadastroUsuario(String nome, Instant dataInicial, Instant dataFinal,
-      InfosPropriedade infosPropriedade, String cnpj, Laboratorio laboratorio, String observacoes) {
-    super();
-    this.nome = nome;
-    this.dataInicial = dataInicial;
-    this.dataFinal = dataFinal;
-    this.infosPropriedade = infosPropriedade;
-    this.cnpj = cnpj;
-    this.laboratorio = laboratorio;
     this.observacoes = observacoes;
   }
 
