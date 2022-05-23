@@ -25,4 +25,69 @@ public class CadastroUsuario {
   private String cnpj;
   private Laboratorio laboratorio;
   private String observacoes;
+
+  public long getId() {
+    return id;
+  }
+
+  public void setId(long id) {
+    this.id = id;
+  }
+
+  public String getNome() {
+    return nome;
+  }
+
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+
+  public Instant getDataInicial() {
+    return dataInicial;
+  }
+
+  public void setDataInicial(Instant dataInicial) {
+    this.dataInicial = dataInicial;
+  }
+
+  public Instant getDataFinal() {
+    return dataFinal;
+  }
+
+  public void setDataFinal(Instant dataFinal) {
+    this.dataFinal = dataFinal;
+  }
+
+  public InfosPropriedade getInfosPropriedade() {
+    return infosPropriedade;
+  }
+
+  public void setInfosPropriedade(InfosPropriedade infosPropriedade) {
+    this.infosPropriedade = infosPropriedade;
+  }
+
+  public String getCnpj() {
+    return cnpj;
+  }
+
+  public void setCnpj(String cnpj) {
+    this.cnpj = cnpj;
+  }
+
+  public Laboratorio getLaboratorio() {
+    return laboratorio;
+  }
+
+  public void setLaboratorio(Laboratorio laboratorio) {
+    this.laboratorio = laboratorio;
+  }
+
+  public String getObservacoes() {
+    return observacoes;
+  }
+
+  public void setObservacoes(String observacoes) {
+    this.observacoes = observacoes;
+  }
+
 }
