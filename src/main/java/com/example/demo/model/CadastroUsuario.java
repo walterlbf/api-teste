@@ -90,4 +90,16 @@ public class CadastroUsuario {
     this.observacoes = observacoes;
   }
 
+  public CadastroUsuario(String nome, Instant dataInicial, Instant dataFinal,
+      InfosPropriedade infosPropriedade, String cnpj, Laboratorio laboratorio, String observacoes) {
+    super();
+    this.nome = nome;
+    this.dataInicial = dataInicial;
+    this.dataFinal = dataFinal;
+    this.infosPropriedade = infosPropriedade;
+    this.cnpj = cnpj;
+    this.laboratorio = laboratorio;
+    this.observacoes = observacoes;
+  }
+
 }
