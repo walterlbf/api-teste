@@ -30,4 +30,9 @@ public class CadastroUsuarioService {
   public CadastroUsuario addUsuario(CadastroUsuario usuario) {
     return this.repository.save(usuario);
   }
+
+  public void deleteById(Long id) {
+    this.repository.deleteById(id);;
+  }
+
 }
